@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.app-wrapper{
+    background-color: pink;
+    box-shadow: 5px 5px 10px grey;
+    min-width: 400px;
+    min-height: 580px;
+    padding: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.question-section-wrapper{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.question-count{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    border: 3px solid purple;
+    border-radius: 15px;
+    background-color: yellow;
+    width: 75%;
+    margin: 20px auto;
+}
+.question{
+    color: whitesmoke;
+    border: 2px solid green;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.answer-section-wrapper{
+    background-color: orange;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+}
+.answer-list{
+    list-style: none;
+    width: 100%;
+    margin: 30px 0 30px 0;
+    display: flex;
+}
+.answer-button{
+    width: 85%;
+    font-size: 24px;
+    color: white;
+    background-color: maroon;
+    border-radius: 15px;
+    padding: 5px;
+    border: 3px solid bisque;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: 0.5s;
+    &:hover{
+        background-color: cornflowerblue;
+        transform: scale(1.1);
+    }
+}
+.next-button{
+    width: 50%;
+    font-size: 24px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: darkgreen;
+    border-radius: 15px;
+    border: 3px solid wheat;
+    cursor: pointer;
+    margin: 30px auto;
+    transition: 0.5s;
+    &:hover{
+        background-color: yellowgreen;
+        transform: scale(1.1);
+    }
+}
+button:focus{
+    outline: none;
+}
+.answer-button:active{
+    background-color: darkgoldenrod;
+}
+.completed{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: black;
+    margin: 40px auto;
+}
+.score-section{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: paleturquoise;
+}
+.correct{
+    background-color: greenyellow;
+}
